@@ -1,0 +1,269 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+:root {
+  --yellow: #F3C827;
+  --brown: #593E26;
+  --orange: #CC4E00;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--brown);
+}
+
+h1,.h1 {
+  font-family: "Dancing Script", cursive;
+}
+h1{
+  font-optical-sizing: auto;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+
+}
+.h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-wrap: nowrap;
+  margin-block: auto;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CSS pour les bordures */
+body.show-borders section,
+body.show-borders footer,
+body.show-borders .b-blue,
+body.show-borders .container {
+    /* Bordures déjà définies dans votre CSS initial */
+}
+
+body:not(.show-borders) section,
+body:not(.show-borders) footer,
+body:not(.show-borders) .b-blue,
+body:not(.show-borders) .container {
+    border: none;
+}
+
+/* CSS pour la visibilité de .block-name */
+body.show-borders .block-name {
+    visibility: visible;
+}
+
+body:not(.show-borders) .block-name {
+    visibility: hidden;
+}
+
+section,
+footer {
+  border: 2px solid red;
+  padding: 32px 0;
+  margin-bottom: 1px;
+}
+
+.b-blue {
+  border: 2px solid blue;
+}
+
+.container {
+  border: 2px solid rgb(71, 135, 87);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.4rem;
+  position: relative;
+}
+
+.rel {
+  position: relative;
+}
+
+.btn {
+  background-color: var(--orange);
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  text-wrap: nowrap;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.header {
+  background-color: white;
+  color: var(--brown);
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  height: 96px;
+  margin-inline: 2rem;
+}
+
+nav ul {
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex-direction-toggle {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  /* transform: translate(-50%, -50%); */
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flex-direction-toggle:hover {
+  background-color: #0056b3;
+}
+
+.flex-direction-toggle:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.hero-content {
+  padding: 1rem;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+.cards-container {}
+
+.cards {
+  padding: 1.4rem;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.4rem 0;
+  width: calc(33.33% - 1rem);
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card.bg-yellow {
+  padding: 0;
+
+  h3,
+  p {
+    padding: .5rem;
+  }
+
+  button {
+    margin: .5rem;
+
+  }
+}
+
+.block-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+/* .block-name.inside {
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%)
+} */
+.toggle-borders {
+  position: fixed; /* ou absolute si vous préférez, mais fixed est souvent plus approprié pour ce genre de bouton */
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  background-color: #333;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toggle-borders:hover {
+  background-color: #444;
+}

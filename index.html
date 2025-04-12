@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Interactive Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button class="toggle-borders">Toggle Borders</button>
+
+
+  <!-- Barre de navigation -->
+  <header class="header d-flex">
+    <span class="block-name">header</span>
+    <a href="#" class="d-flex b-blue">
+      <img src="assets/abeille.png" alt="Logo" class="logo">
+      <span class="h1">La ruche</span>
+      <span class="block-name">.logo</span>
+
+
+    </a>
+    <nav class="nav b-blue">
+      <ul class="d-flex">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A Propos</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <button class="flex-direction-toggle">Row</button>
+      </ul>
+      <span class="block-name">nav ul</span>
+    </nav>
+    <button class="btn">Acheter maintenant</button>
+
+  </header>
+
+  <!-- Hero section -->
+  <section class="bg-yellow">
+    <div class="container d-flex">
+      <span class="block-name">.container (display:flex)</span>
+
+      <div class="hero-content b-blue">
+        <span class="block-name">.hero-content</span>
+        <h1>La ruche</h1>
+        <p>Miels traditionnels respectueux</p>
+        <button class="btn">Découvrir notre sélection de miel</button>
+      </div>
+      <img src="assets/abeille.png" alt="Abeille" class="hero-image">
+    </div>
+    <span class="block-name">.hero</span>
+  </section>
+
+
+  <!-- Engagement section -->
+  <section class="engagement">
+    <span class="block-name">section</span>
+    <div class="container">
+      <span class="block-name">.container (display:block)</span>
+
+      <h2>Engagement</h2>
+      <div class="d-flex b-blue">
+        <span class="block-name">div (display:flex)</span>
+        <p>Au cœur d'une vocation dédiée à la préservation de l'équilibre naturel, notre apiculteur incarne une passion
+          inébranlable pour l'art ancien de l'apiculture. Imprégné de traditions transmises de génération en génération,
+          son engagement envers la production de miel s'inscrit dans une démarche résolument ancrée dans le respect de
+          la nature. À travers une approche méticuleuse et respectueuse des abeilles, cet apiculteur s'efforce de créer
+          un miel d'une qualité exceptionnelle, révélateur des nuances uniques que la biodiversité offre.</p>
+        <p>Son rucher, niché dans un écrin de verdure, reflète une philosophie axée sur la symbiose entre l'homme et
+          l'environnement. En favorisant des pratiques agricoles durables, notre apiculteur contribue non seulement à la
+          préservation des abeilles, mais aussi à la diversité florale de la région. Chaque pot de miel qui émane de son
+          exploitation est le fruit d'un processus méticuleux, où l'équilibre entre la tradition et l'innovation se
+          conjugue pour offrir une expérience gustative authentique et pure.</p>
+        <button class="flex-direction-toggle">Row</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bienfaits section -->
+  <section class="bg-yellow">
+    <span class="block-name">section</span>
+    <div class="container">
+      <span class="block-name">.container (display:block)</span>
+
+      <h2>Bienfaits du miel</h2>
+      <div class="cards d-flex b-blue">
+        <span class="block-name">.cards-wrapper</span>
+        <div class="card b-blue">
+          <span class="block-name">div</span>
+          <h3>Antioxydants naturels</h3>
+          <p>Le miel est riche en antioxydants, tels que les flavonoïdes, qui aident à neutraliser les radicaux libres
+            dans le corps, contribuant ainsi à la prévention du vieillissement prématuré.</p>
+        </div>
+        <div class="card b-blue">
+          <span class="block-name">div</span>
+          <h3>Propriétés antibactériennes </h3>
+          <p>Le miel possède des propriétés antibactériennes naturelles qui peuvent aider à lutter contre les infections
+            et accélérer le processus de guérison des plaies.</p>
+        </div>
+        <div class="card b-blue">
+          <span class="block-name">div</span>
+          <h3>Soulagement de la toux</h3>
+          <p>Le miel est souvent utilisé comme remède naturel pour apaiser la gorge irritée et soulager la toux. Il peut
+            être particulièrement efficace lorsqu'il est mélangé à de l'eau chaude ou à des infusions.</p>
+        </div>
+        <button class="flex-direction-toggle">Row</button>
+      </div>
+      <button class="btn">En savoir plus sur les bienfaits du miel</button>
+
+    </div>
+  </section>
+  <!-- Produits sections -->
+  <section>
+    <span class="block-name">section</span>
+    <div class="container">
+      <span class="block-name">.container (display:block)</span>
+
+      <h2>Produits</h2>
+      <div class="cards d-flex b-blue">
+        <span class="block-name">.cards-wrapper</span>
+
+        <div class="card b-blue bg-yellow">
+          <span class="block-name">.card</span>
+          <img src="assets/miel.png" alt="">
+          <h3>Miel de Châtaignier</h3>
+          <p>Le Miel de châtaignier tonifiant, connaît un regain de popularité avec son goût …</p>
+          <button class="btn">Ajouter au panier</button>
+
+        </div>
+
+        <div class="card b-blue bg-yellow">
+          <span class="block-name">.card</span>
+          <img src="assets/pain-miel.png" alt="">
+          <h3>Pain au miel</h3>
+          <p>Le pain au miel est une recette au goût inégalé, fort d’un ancien savoir faire…</p>
+          <button class="btn">Ajouter au panier</button>
+
+        </div>
+
+        <div class="card b-blue bg-yellow">
+          <span class="block-name">.card</span>
+          <img src="assets/figue.png" alt="">
+          <h3>Figues confites</h3>
+          <p>La figue se marie à merveille à la douceur du miel pour faire revenir vos plates…</p>
+          <button class="btn">Ajouter au panier</button>
+
+        </div>
+        <button class="flex-direction-toggle">Row</button>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-yellow">
+    <span class="block-name">footer</span>
+    <div class="container d-flex">
+      <span class="block-name">.container (display:flex)</span>
+
+      <div class="card b-blue">
+        <span class="block-name">div</span>
+        <h2>Contactez-nous</h2>
+        <p>Tel: 04.04.04.04.04</p>
+        <p>Mail: laruche@msn.fr</p>
+        <h3>Lundi au Vendredi</h3>
+        <p>8h->12h|14h->18h</p>
+      </div>
+      <div class="card b-blue">
+        <span class="block-name">div</span>
+
+        <h2>Informations</h2>
+        <p>Plan du site</p>
+        <p>Conditions générales</p>
+        <p>Informations légales</p>
+        <p>FAQ</p>
+      </div>
+      <div class="card b-blue">
+        <span class="block-name">div</span>
+
+        <h2>Abonnez-vous à notre newsletter</h2>
+        <p>Recevez les dernières nouvelles et offres spéciales directement dans votre boîte de réception.</p>
+        <form action="#">
+          <input type="email" placeholder="Votre adresse e-mail">
+          <button type="submit">S'abonner</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
